@@ -1,0 +1,25 @@
+Jason Serrano
+Lab 3 Observations
+
+Step 1: 
+The code in step 1 would return the files in my Lab3 directory.
+
+Step2:
+The Program would return "Writer on the upstream end of the pipe
+ -> 1 Argument (2 arguments if I gave an argument)
+Below that, the program would return "Reader on the downstream end of the pipe ./S t e p 2 (followed by input given)
+
+Step 3: 
+Modified Program of Step 2
+
+Step 4: 
+Step 4 took some timne to figure out but after finishing, it printed the Lab3 directory
+
+Step5:
+Step 5 would cycle between producer and consumer where the producer (The parent process) would
+send messages to a pipe that would later send to buffer. The consumer would print the message in the buffer.
+It would then cycle back to the pipe where the pipe would output as much of the message from the producer
+into the buffer. This was done until the message was fully printed out by the consumer
+
+Step6:
+The issue was that there needed to be a pthread command when compiling the program. The result was the creation of 10 threads. 

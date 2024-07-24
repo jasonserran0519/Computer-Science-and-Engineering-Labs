@@ -1,0 +1,18 @@
+# Name: Jason Serrano
+# Date: 2/16/24  (the day you have lab)
+# Title: Lab5 – Synchronization using semaphores, Lock and condition variables 
+# Description: This file documents all of the observations for the Lab5 experiments
+
+Step1:
+After running the program, it showed threads moving in and out of critical sections. However the order of threads going in the critical section were out of order.
+But, the output of threads was in order. 
+
+Step2: 
+The program essentially has the same funtionality as Step1 with the Semaphore implimentation. This time it is used with mutex lock. 
+
+Step3:
+The program uses semaphores and a buffer to solve the producer consumer problem.
+I did notice that program would continue forever.
+
+Step4:
+The program has similar functionality to step 3, but with condition variables. 

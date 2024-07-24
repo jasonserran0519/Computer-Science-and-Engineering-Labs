@@ -1,0 +1,34 @@
+Name: Jason Serrano
+Date: 2/16/24  (the day you have lab)
+Title: Lab5 – Synchronization using semaphores, Lock and condition variables Description: This file documents all of the observations for the Lab5 experiments
+
+Steps to completing the assignment:
+
+1. Opened the vmware application with:
+	- setup vmware
+	- vmware &
+2. Login in as: root with the password I set
+
+3. Started the file transfer with:
+	-  in VM put input: '# tcpd fp /usr/bin/in.ftpd &'
+	-  in VM put: '# ifconfig'
+	- in ternminal "host machine": 'ftp XXX.XX.XX.XXX' (your IP Address)
+
+4. Run following commands in host machine:
+	- $ cd  /usr/srs/kernel
+	- $ get proc.c
+	from this, proc.c wil be placed in the main host machine to be able to edit. Once the changes have been done. Save the file
+
+5. Changes in file 
+	- The changes can be found in the function pick_process()
+	- due to the function being responsible for choosing which processes to use
+	- The change I did was to ensure that 50% of the time, the priority would get skipped. 
+	- This allows for fairness among the processes. 
+	- I did this by making a random int Number choose between 0 and 20. If the the number is less that 10, the priority process will be choosen. 
+
+
+6. Put the file back into the virtual machine with '$ put proc.c' in the host machine 
+7. In virtual machine 
+	- '# cd /usr/src'  opens directory in the OS
+	- '# make world' recompiles the kernel
+8. View results

@@ -1,0 +1,20 @@
+# Name: Jason Serrano
+# Date: 2/09/24 (the day you have lab)
+# Title: Lab4 – pthreads
+# Description: This program is used for the documentation of lab 4
+
+Step 1:
+On first compilation, the program does not compile due to there being a 
+"cannot find -lp" error and "error: ld returned 1 exit status". To fix it
+I added a -lpthread command when compiling my code. this resulted in a bunch of trheads being returned at random.
+However when running the program while streaming a youtube video, the threads returned in an orderly fashion and not at random.
+The go() function returns variables that are exclusive per thread as it generates the IDs of each thread,
+while the i local varaible is a shared state variable as it's responsible for being the number of threads created. 
+
+Step 2:
+The possible outcomes from deleting pthread join is that the threads don't wait for eachother to execute.
+This results in threads printing out of order and potentially not clossing until the main thread is done. 
+
+Step 3:
+The matrix worked well, I found out that if srand(time) is stated time it creates two seeds of random generators that will actually generate the same number. 
+I fixed the issue by only having one srand.

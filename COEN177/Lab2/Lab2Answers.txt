@@ -1,0 +1,19 @@
+Jason Serrano
+1/26/24
+
+Lab 2
+
+1-3: In step 3, I noticed the program would not run if there wasn't a value being 
+passed into the program.
+
+4:  The higher the number for the delays, the slower the program runs. 
+500 input resulted in a quick execution of the code. 
+
+5: My thought process was to create one Parent Process that has 2 child processes. 
+Those child processes then have 2 child processes of there own. The end result leads
+to 1 Parent 2 Children and 4 GrandChildren. This equals 7 processes.
+
+6: The processes for threads was similar but I needed to make a seperate function for
+the threads.
+
+7: I had some initial trouble with the code due to a spelling mistake, but I got it sorted out. 
