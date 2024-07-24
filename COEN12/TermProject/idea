@@ -1,0 +1,41 @@
+circular linked lists with a head pointer
+Array will help with a lot of indexing
+as elements are added, will continuously need to reallocate memory.
+
+LIST *createList(void)
+{
+    In this function, will create doubly-linked list lp with similar elements of:
+    count;
+    length;
+    the array;
+}
+
+void destory List{
+
+Plan to have similar functionallity as last labs
+will deallocate all the information in 
+    intiallize pDel, and pNext;
+    do{
+	free pDel;
+    while (pDek != lp -> head);
+    free(lp);
+}
+
+int numItems(LIST *lp)
+{
+    assert(lp != NULL);
+    return lp -> count;
+}
+
+void addFirst(LIST *lp, void *item)
+{ 
+    function used to add new item onto the head of linked list
+
+}
+
+void addLast
+{
+Will use my tail pouinter to point me striaght tp the end
+insert the new item onto end making it the new tail
+
+    

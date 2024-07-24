@@ -1,0 +1,22 @@
+#include <assert.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+typedef struct set{
+    int count;
+    int length;
+    char **data;
+}SET;
+
+SET *createSet(int maxElts);
+bool addElement(SET *sp, char *elt);
+int numElement(SET *sp);
+bool removeElement(SET *sp, char *elt);
+char* findElement(SET *sp, char *elt);
+char **getElements(SET *sp);
+void destroySet(SET *sp);
+
+
+
