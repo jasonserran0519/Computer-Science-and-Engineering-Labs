@@ -1,4 +1,4 @@
-#COEN146: Computer Networks
+# COEN146: Computer Networks
 This class specialized in the principles of Computer Networks and the Internet as a whole
 
 ## Content
